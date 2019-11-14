@@ -16,6 +16,7 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
+        <completion.contributor language="any" implementationClass="ReturnCompletion.ReturnCompletionContributor"/>
     </extensions>
 
     <actions>
