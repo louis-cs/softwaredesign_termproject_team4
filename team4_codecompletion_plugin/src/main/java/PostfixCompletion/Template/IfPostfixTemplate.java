@@ -9,13 +9,16 @@ import com.intellij.ide.projectView.impl.nodes.PackageUtil;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.roots.ProjectRootManager;
 import com.intellij.psi.*;
+import com.intellij.psi.impl.source.tree.java.PsiIfStatementImpl;
 import com.thaiopensource.xml.dtd.om.Def;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import sun.security.util.Debug;
+import sun.tools.tree.Context;
 
 public class IfPostfixTemplate extends PostfixTemplate {
-    protected IfPostfixTemplate()
+    public IfPostfixTemplate()
     {
         super("if","Make default if structure","if([statement]) {}");
     }
@@ -28,9 +31,7 @@ public class IfPostfixTemplate extends PostfixTemplate {
 
     @Override
     public void expand(@NotNull PsiElement context, @NotNull Editor editor) {
-        //TODO: IMplement this
-        
+        Debug.println("Expand", "!!");
+
     }
 }
-
-p
