@@ -18,9 +18,10 @@ import sun.security.util.Debug;
 import sun.tools.tree.Context;
 
 public class IfPostfixTemplate extends PostfixTemplate {
+
     public IfPostfixTemplate()
     {
-        super("if","Make default if structure","if([statement]) {}");
+        super(null,"if","if([statement]) {}",null);
     }
 
     @Override
@@ -31,7 +32,5 @@ public class IfPostfixTemplate extends PostfixTemplate {
 
     @Override
     public void expand(@NotNull PsiElement context, @NotNull Editor editor) {
-        Debug.println("Expand", "!!");
-
     }
 }

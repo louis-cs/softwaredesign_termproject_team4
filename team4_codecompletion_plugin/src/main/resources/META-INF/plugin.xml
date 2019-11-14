@@ -17,6 +17,9 @@
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
         <completion.contributor language="any" implementationClass="ReturnCompletion.ReturnCompletionContributor"/>
+        <codeInsight.template.postfixTemplateProvider
+                language="JAVA"
+                implementationClass="PostfixCompletion.PostfixCompletionProvider"/>
     </extensions>
 
     <actions>
