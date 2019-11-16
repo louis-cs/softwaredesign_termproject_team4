@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/recom4collection.main.iml" filepath="$PROJECT_DIR$/.idea/modules/recom4collection.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/recom4collection.test.iml" filepath="$PROJECT_DIR$/.idea/modules/recom4collection.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/team-4-project.iml" filepath="$PROJECT_DIR$/.idea/team-4-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/team4_codecompletion_plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/team4_codecompletion_plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/team4_codecompletion_plugin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/team4_codecompletion_plugin.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/team4_codecompletion_plugin.test.iml" filepath="$PROJECT_DIR$/.idea/modules/team4_codecompletion_plugin.test.iml" />
     </modules>
   </component>
 </project>
