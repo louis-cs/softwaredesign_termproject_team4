@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
  * Custom Completion Contributor
  * : to add condition to show popup. (condition: 'return ' typed)
  */
-//BeforeCompletion -> DuringCopletion -> FillCompletion  순으로 호출되는거 같음
+//BeforeCompletion -> DuringCopletion -> FillCompletion
 public class ArgumentCompletionContributor extends CompletionContributor {
     public ArgumentCompletionContributor() {
         super();
@@ -20,7 +20,7 @@ public class ArgumentCompletionContributor extends CompletionContributor {
 
     @Override
     public void fillCompletionVariants(@NotNull CompletionParameters parameters, @NotNull CompletionResultSet result) {
-     System.out.println("FillCompletion");
+    // System.out.println("FillCompletion");
         result.addLookupAdvertisement("Argument Completion from Team G4!");
 
         super.fillCompletionVariants(parameters, result);
@@ -28,27 +28,27 @@ public class ArgumentCompletionContributor extends CompletionContributor {
 
     @Override
     public void beforeCompletion(@NotNull CompletionInitializationContext context) {
-        System.out.println("Before");
+      //  System.out.println("Before");
         super.beforeCompletion(context);
     }
 
     @Nullable
     @Override
     public String handleEmptyLookup(@NotNull CompletionParameters parameters, Editor editor) {
-        System.out.println("HandleEmptyLookup");
+       // System.out.println("HandleEmptyLookup");
         return super.handleEmptyLookup(parameters, editor);
     }
 
     @Nullable
     @Override
     public AutoCompletionDecision handleAutoCompletionPossibility(@NotNull AutoCompletionContext context) {
-        System.out.println("Text");
+       // System.out.println("Text");
         return super.handleAutoCompletionPossibility(context);
     }
 
     @Override
     public void duringCompletion(@NotNull CompletionInitializationContext context) {
-        System.out.println("duringCompletion");
+       // System.out.println("duringCompletion");
         super.duringCompletion(context);
     }
 }
