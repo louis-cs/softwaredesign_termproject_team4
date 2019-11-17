@@ -1,0 +1,15 @@
+<idea-plugin>
+  <version>1.0</version>
+  <change-notes>
+      Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <idea-version since-build="192.7142" until-build="192.*"/>
+  <id>sample_plugin</id>
+  <name>Sample demo</name>
+  <vendor> kc </vendor>
+  <description> Sample Sample Sample Sample Sample Sample </description>
+  <extensions defaultExtensionNs="com.intellij">
+    <completion.contributor language="any" implementationClass="ShortcutCompletion.ShortcutCompletion"/>
+  </extensions>
+  <actions/>
+</idea-plugin>
