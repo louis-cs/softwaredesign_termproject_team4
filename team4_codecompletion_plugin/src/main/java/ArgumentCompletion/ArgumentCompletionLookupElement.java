@@ -23,7 +23,7 @@ public class ArgumentCompletionLookupElement extends LookupElement {
     @NotNull
     @Override
     public String getLookupString() {
-        return annotation;
+        return msg;
     }
 
     @Override
