@@ -20,6 +20,7 @@
         <codeInsight.template.postfixTemplateProvider
                 language="JAVA"
                 implementationClass="PostfixCompletion.PostfixCompletionProvider"/>
+
     </extensions>
 
     <actions>
