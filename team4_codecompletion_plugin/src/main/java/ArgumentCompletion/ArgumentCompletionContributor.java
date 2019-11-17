@@ -3,6 +3,7 @@ package ArgumentCompletion;
 import com.intellij.codeInsight.completion.*;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.patterns.PlatformPatterns;
+import com.intellij.psi.PsiElement;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -10,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
  * Custom Completion Contributor
  * : to add condition to show popup. (condition: 'return ' typed)
  */
-//BeforeCompletion -> DuringCOmpletion -> FillCompletion  순으로 호출되는거 같음
+//BeforeCompletion -> DuringCopletion -> FillCompletion  순으로 호출되는거 같음
 public class ArgumentCompletionContributor extends CompletionContributor {
     public ArgumentCompletionContributor() {
         super();
@@ -21,6 +22,7 @@ public class ArgumentCompletionContributor extends CompletionContributor {
     public void fillCompletionVariants(@NotNull CompletionParameters parameters, @NotNull CompletionResultSet result) {
      System.out.println("FillCompletion");
         result.addLookupAdvertisement("Argument Completion from Team G4!");
+
         super.fillCompletionVariants(parameters, result);
     }
 
