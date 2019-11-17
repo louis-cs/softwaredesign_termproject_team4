@@ -16,6 +16,8 @@ public class ArgumentCompletionContributor extends CompletionContributor {
     public ArgumentCompletionContributor() {
         super();
         extend(CompletionType.BASIC, PlatformPatterns.psiElement(), new ArgumentCompletionProvider());
+
+
     }
 
     @Override
@@ -28,7 +30,8 @@ public class ArgumentCompletionContributor extends CompletionContributor {
 
     @Override
     public void beforeCompletion(@NotNull CompletionInitializationContext context) {
-      //  System.out.println("Before");
+        System.out.println("Before");
+
         super.beforeCompletion(context);
     }
 
@@ -48,8 +51,12 @@ public class ArgumentCompletionContributor extends CompletionContributor {
 
     @Override
     public void duringCompletion(@NotNull CompletionInitializationContext context) {
-       // System.out.println("duringCompletion");
+        System.out.println("duringCompletion");
         super.duringCompletion(context);
+    }
+
+    public boolean invokeAutoPopup(@NotNull PsiElement position, char typeChar){
+            return typeChar == ')';
     }
 }
 
