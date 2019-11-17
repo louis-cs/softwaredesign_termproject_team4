@@ -2,6 +2,7 @@ package ArgumentCompletion;
 
 import com.intellij.codeInsight.completion.*;
 import com.intellij.openapi.editor.Editor;
+import com.intellij.patterns.PlatformPatterns;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -11,11 +12,9 @@ import org.jetbrains.annotations.Nullable;
  */
 //BeforeCompletion -> DuringCOmpletion -> FillCompletion  순으로 호출되는거 같음
 public class ArgumentCompletionContributor extends CompletionContributor {
-
     public ArgumentCompletionContributor() {
-
         super();
-        System.out.println("Creation");
+        extend(CompletionType.BASIC, PlatformPatterns.psiElement(), new ArgumentCompletionProvider());
     }
 
     @Override
