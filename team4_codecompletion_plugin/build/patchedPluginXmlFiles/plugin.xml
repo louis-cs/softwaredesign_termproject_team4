@@ -1,0 +1,18 @@
+<idea-plugin>
+  <version>1.0</version>
+  <change-notes>
+      Add change notes here.&lt;br&gt;
+      &lt;em&gt;most HTML tags may be used&lt;/em&gt;</change-notes>
+  <idea-version since-build="192.7142" until-build="192.*"/>
+  <id>edu.postech.csed332.team4.team4_codecompletion_plugin</id>
+  <name>Autocompletion </name>
+  <vendor email="support@postech.ac.kr" url="http://postech.ac.kr">Postech</vendor>
+  <description>
+    Enter short description for your plugin here.&lt;br&gt;
+    &lt;em&gt;most HTML tags may be used&lt;/em&gt;
+    </description>
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow id="My Sample Tool Window" anchor="right" factoryClass="PluginToolWindowFactory"/>
+  </extensions>
+  <actions/>
+</idea-plugin>
