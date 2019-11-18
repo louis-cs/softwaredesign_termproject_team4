@@ -6,6 +6,6 @@ public class ForTest {
         int local1 = 2;
         int local2 = 2;
 
-        <caret>
+        return<caret>
     }
 }
