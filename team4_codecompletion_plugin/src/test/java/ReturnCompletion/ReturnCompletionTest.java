@@ -15,7 +15,10 @@ public class ReturnCompletionTest extends BasePlatformTestCase {
      */
     @Test
     public void testInvokeAutoPopup(){
-        myFixture.configureByFile("ForReturnCompletionTest.java");
+        myFixture.configureByFile("ForReturnCompletionTest1.java");
+        myFixture.type(' ');
+        myFixture.type(';');
+        myFixture.configureByFile("ForReturnCompletionTest2.java");
         myFixture.type(' ');
         assertNotNull(myFixture);
     }
