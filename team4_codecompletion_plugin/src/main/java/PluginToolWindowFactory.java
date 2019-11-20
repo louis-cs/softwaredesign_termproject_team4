@@ -13,7 +13,7 @@ import com.intellij.ui.content.*;
 public class PluginToolWindowFactory implements ToolWindowFactory {
     // Create the tool window content.
     public void createToolWindowContent(Project project, ToolWindow toolWindow) {
-        PluginToolWindow myToolWindow = new PluginToolWindow(toolWindow);
+        MyPluginToolWindow myToolWindow = new MyPluginToolWindow(toolWindow);
         ContentFactory contentFactory = ContentFactory.SERVICE.getInstance();
         Content content = contentFactory.createContent(myToolWindow.getContent(), "", false);
         toolWindow.getContentManager().addContent(content);
