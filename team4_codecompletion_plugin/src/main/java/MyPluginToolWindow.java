@@ -3,6 +3,7 @@ import com.intellij.openapi.wm.ToolWindow;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -50,6 +51,8 @@ public class MyPluginToolWindow {
                 false
         };
 
+        checkboxtochoices = new HashMap<>();
+        checkboxtodropdown = new HashMap<>();
         checkboxtochoices.put(featurenames[1], new String[]{"choice 1", "choice 2", "choice 3"});
 
         features = new LinkedHashMap<>();
@@ -72,7 +75,7 @@ public class MyPluginToolWindow {
                 }
             }
             cb.setVisible(true);
-            addComponent(cb, GridBagConstraints.RELATIVE, i, GridBagConstraints.CENTER, GridBagConstraints.BOTH);
+            addComponent(cb, i, GridBagConstraints.RELATIVE, GridBagConstraints.CENTER, GridBagConstraints.BOTH);
             checkboxtodropdown.put(source, cb);
         }else{
             checkboxtodropdown.get(source).setVisible(true);
@@ -85,7 +88,7 @@ public class MyPluginToolWindow {
     }
 
     private void addComponent(Component component, int gridx, int gridy, int anchor, int fill){
-        GridBagConstraints gbc = new GridBagConstraints(gridx,gridy,1,1,1.0,1.0,anchor,fill,insets,0,0);
+        GridBagConstraints gbc = new GridBagConstraints(gridy,gridx,1,1,1.0,1.0,anchor,fill,insets,0,0);
         myToolWindowContent.add(component,gbc);
     }
 
