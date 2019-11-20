@@ -4,6 +4,7 @@
     <list default="true" id="c090b6fd-6253-46cd-a972-37b1dcfb2321" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CheckboxAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CheckboxAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyPluginToolWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyPluginToolWindow.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +63,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">

@@ -1,9 +1,14 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
-class EnableDisableCheckboxAction extends AbstractAction {
-    public EnableDisableCheckboxAction(String text) {
+class CheckboxAction extends AbstractAction {
+
+    Boolean isDropDown;
+    MyPluginToolWindow window;
+    public CheckboxAction(String text, Boolean isDropDown, MyPluginToolWindow window) {
         super(text);
+        this.isDropDown = isDropDown;
+        this.window = window;
     }
 
     @Override
@@ -11,10 +16,15 @@ class EnableDisableCheckboxAction extends AbstractAction {
         JCheckBox cbLog = (JCheckBox) e.getSource();
         if (cbLog.isSelected()) {
             System.out.println("Feature enabled!");
-            //enable the feature somehow
+            if (isDropDown){
+                window.addDropDown((JCheckBox) e.getSource());
+            }
         } else {
             System.out.println("Feature disabled :(");
             //disable the feature
+            if (isDropDown){
+                window.removeDropDrown((JCheckBox)e.getSource());
+            }
         }
     }
 
